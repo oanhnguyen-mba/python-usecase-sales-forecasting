@@ -14,9 +14,19 @@ ARIMA is a widely utilized statistical model for analyzing and forecasting univa
 - Visualization contrasts observed data with forecasted values, facilitating model validation.
 
 ## Requirements
+Python 3.x
 
-- Python 3.x
-- pandas
-- numpy
-- matplotlib
-- statsmodels
+## Libraries
+pandas, numpy, matplotlib, statsmodels
+
+## Results
+The observed sales data from 2023 to 2024 show high volatility, peaking near 260 before declining to approximately 210 at the end of 2024. 
+The ARIMA (1,1,1) model forecasts a continued mild decrease in sales for the first half of 2025, reflecting the recent downward trend in the data. 
+This is consistent with the model’s reliance on differenced data and autoregressive patterns, projecting future values based on recent declines. 
+The forecast represents expected mean values and does not incorporate external factors such as seasonality or economic influences.
+
+## Managerial Implications
+The downward forecast suggests potential challenges in sales performance, warranting strategic attention. 
+Managers should consider refining the model by adjusting ARIMA parameters or employing advanced models that account for seasonality (e.g., SARIMA). 
+Additionally, auto_arima automatically identifies optimal parameters (p, d, q) and, if necessary, seasonal components from the data, thereby improving forecast accuracy. 
+Incorporating exogenous variables may also enhance predictive validity. Recognizing model limitations is essential for informed decision-making and proactive business planning.
